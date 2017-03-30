@@ -1,18 +1,18 @@
-{{#if addNewPost}} <!--Now get this, the addNewRental is the value that is either true or false, hence the if statements below it -->
+{{#if addNewPost}} <!--Now get this, the addNewPost is the value that is either true or false, hence the if statements below it -->
   <h1>New Blog </h1>
   <div>
     <form class="jumbotron">
       <div class="form-group">
-        <label for="owner">Name for Author</label>
+        <label for="owner">Author</label>
         {{input value = owner id="owner"}}
       </div>
       <div class="form-group">
-        <label for="head">Put a Heading</label>
+        <label for="head">Title</label>
         {{input value = head id="head"}}
       </div>
 
       <div class="form-group">
-        <label for="snippet">Short Description of the Blog</label>
+        <label for="snippet">Snippet</label>
         {{input value = snippet id="snippet"}}
       </div>
 
@@ -25,11 +25,11 @@
         <label for="image">Image URL</label>
         {{input value = image id="image"}}
       </div>
-      <button {{action 'savePost1'}} >Save </button>
+      <button {{action 'savePost'}} >Save </button>
       <button {{action 'hideForm'}}> Hide</button> <!--We've added this action that hides the form when clicked-->
 
     </form>
   </div>
 {{else}}
-  <button {{action 'rentalPostShow'}}> Add a new Rental</button>
+  <button {{action 'rentalPostShow'}}> Add a new Post</button>
 {{/if}}

@@ -17,11 +17,11 @@ module.exports = function(environment) {
       }
     },
     firebase: {
-      apiKey: "AIzaSyBIcG8INteE7_8PoKQaRYVyhEhJSV0q5Pw",
-      authDomain: "bustle-clone-391a5.firebaseapp.com",
-      databaseURL: "https://bustle-clone-391a5.firebaseio.com",
-      storageBucket: "bustle-clone-391a5.appspot.com",
-      messagingSenderId: "34529879102"
+      apiKey: "AIzaSyAAiUyTU1Kt4N9Y3HZ6939nOwRGJHvovdA",
+   authDomain: "bustle-clone-4398f.firebaseapp.com",
+   databaseURL: "https://bustle-clone-4398f.firebaseio.com",
+   storageBucket: "bustle-clone-4398f.appspot.com",
+   messagingSenderId: "456222768672"
     },
     APP: {
       // Here you can pass flags/options to your application instance
