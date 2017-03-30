@@ -1,1 +1,33 @@
-{{yield}}
+{{#if updatePostForm}} <!--Now get this, the addNewPost is the value that is either true or false, hence the if statements below it -->
+  <h1>New Blog </h1>
+  <div>
+    <form class="jumbotron">
+      <div class="form-group">
+        <label for="owner">Author</label>
+        {{input value = owner id="owner" placeholder=post.owner}}
+      </div>
+      <div class="form-group">
+        <label for="head">Title</label>
+        {{input value = head id="head" placeholder=post.head}}
+      </div>
+
+      <div class="form-group">
+        <label for="snippet">Snippet</label>
+        {{input value = snippet id="snippet" placeholder=post.snippet}}
+      </div>
+
+      <div class="form-group">
+        <label for="body">Post content</label>
+        {{input value = body id="body" placeholder=post.body}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value = image id="image" placeholder=post.image}}
+      </div>
+      <button {{action 'update' post}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updatePost'}}> Update Post</button>
+{{/if}}
